@@ -41,7 +41,7 @@ def ficha():
     nombre_solo = nombre_limpio[:nombre_limpio.find(' ')]
     apellido = nombre_limpio[nombre_limpio.find(' ') + 1:]
     print(f"Usuario: {apellido.lower()}.{nombre_solo.lower()}")
-    print(f"Email valido: {"@" in email}")
+    print(f"Email valido: {'@' in email}")
     print(f"Dominio: {email.lower()[email.find('@') + 1:]}")
     print(f"Nombre para archivo: {nombre_limpio.replace(' ', '_')}")
     print(f"Cantidad de a: {nombre_limpio.lower().count('a')}")
